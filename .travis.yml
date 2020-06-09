@@ -1,7 +1,8 @@
 language: java
+gradle assemble
+gradle check
 branches:
   only: 
     - master
-
 
 
