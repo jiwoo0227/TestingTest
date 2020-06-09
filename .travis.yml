@@ -1,11 +1,11 @@
 language: java
 
-jdk:
-  - openjdk8
 
 before_install:
   - chmod +x gradlew
   - gradle assemble
+  - gradle check
+  
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
