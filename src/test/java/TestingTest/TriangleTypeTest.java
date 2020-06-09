@@ -52,5 +52,30 @@ class TriangleTypeTest {
 		assertEquals(TriangleType.P_EQUILATERAL,triangle.classify());
 		
 	}
+	@Test
+	public void classify2test() {
+		triangle = new TriangleType(-10,10,10);
+		assertEquals(TriangleType.P_IMPOSSIBLE,triangle.classify());
+		
+	}
+	@Test
+	public void classify3test() {
+		triangle = new TriangleType(10,10,15);
+		assertEquals(TriangleType.P_ISOSCELES,triangle.classify());
+		
+	}
+	@Test
+	public void classify4test() {
+		triangle = new TriangleType(8,10,6);
+		assertEquals(TriangleType.P_RIGHTANGLED,triangle.classify());
+		
+	}
+	@Test
+	public void classify5test() {
+		triangle = new TriangleType(10,12,10);
+		assertEquals(TriangleType.P_SCALENE,triangle.classify());
+		
+	}
+
 	
 }
